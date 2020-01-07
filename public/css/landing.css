@@ -1,0 +1,43 @@
+body {
+    background-image: url("../image/Background.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+a {
+    float: right;
+}
+
+.vl {
+    border-left: 6px solid #080080;
+    height: 620px;
+    position: absolute;
+    left: 50%;
+    margin-left: 220px;
+    top: 85px;
+}
+
+#Signin {
+    margin-right: 227px;
+    margin-top: 15px;
+    font-size: x-large;
+}
+
+a#Signup {
+    margin-right: 128px;
+    margin-top: 15px;
+    font-size: x-large;
+}
+
+div#About {
+    margin-top: 169px;
+    margin-left: 1030px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Bebas Neue', cursive;
+    color: crimson;
+}
+
+div#LandingPage {
+    margin-left: 786px;
+}

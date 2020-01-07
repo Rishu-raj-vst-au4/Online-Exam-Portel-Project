@@ -1,0 +1,36 @@
+div#Body {
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 65%;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+input#firstname {
+    width: 190%;
+}
+
+input#last-name {
+    width: 190%;
+    margin-left: 100%;
+}
+
+input#password {
+    width: 190%;
+}
+
+input#confirm-password {
+    width: 190%;
+    margin-left: 100%;
+}
+
+input#Mobile-number {
+    width: 190%;
+}
+
+input#inputEmail {
+    width: 190%;
+    margin-left: 100%;
+}
