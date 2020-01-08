@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="/css/signup.css">
+<link rel="stylesheet" href="./../public/css/signup.css">
 
 <div class="container" id="Body">
     <div class="row">
         <div class="col-md-5">
             <h3 class="heading">Sign Up Form</h3>
-            <form >
+            <div>
                 <div class="form-row ">
                     <div class="form-group col">
                         <input type="text" name='firstname' class="form-control" id="firstname"
@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col" id="gender" >
+                    <div class="form-group col" id="gender">
                         <p>Please select your gender:</p>
                         <input type="radio" name="gender" value="male" required> Male
                         <input type="radio" name="gender" value="female" required> Female
@@ -44,11 +44,44 @@
                             name='confirmPassword' required>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-secondary" id="Agreeandjoin">Agree and Join</button><br><br>
+                <button type="button" class="btn btn-secondary" id="Agreeandjoin">Agree and Join</button><br><br>
                 <div class="alreadyMember">
                     <p>Already a member? <a href="/">Login here</a></p>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                
-                
-                <script src="../public/Js/signup.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#Agreeandjoin").on("click", function () {
+            console.log("clicked");
+            let firstname = $("#firstname").val();
+            let lastname = $("#last-name").val();
+            let gender = $("#gender").val();
+            let email = $("#inputEmail").val();
+            let mobilenumber = $("#Mobile-number").val();
+            let password = $("#password").val();
+            let confirmpassword = $("#Confirm Password").val();
+            console.log(firstname);
+            $.ajax({
+                method: "POST",
+                url: "/signup",
+                dataType: "json",
+                data: {
+                    Firstname: firstname,
+                    Lastname: lastname,
+                    Gender: gender,
+                    Email: email,
+                    Mobilenumber: mobilenumber,
+                    Password: password,
+                    ConfirmPassword: confirmpassword
+                },
+                success: function () { },
+                error: function () { }
+            });
+        });
+    });
+
+</script>
