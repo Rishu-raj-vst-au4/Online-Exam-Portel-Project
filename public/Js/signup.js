@@ -7,10 +7,11 @@ $(document).ready(function() {
         let mobilenumber = $('#Mobile-number').val();
         let password = $('#password').val();
         let confirmpassword = $('#Confirm Password').val();
-        console.log(firstname);
+        console.log(firstname)
         $.ajax({
             method: "POST",
-            url: '/cart/add',
+            url: '/signup',
+            dataType: 'json',
             data: {
                 Firstname: firstname,
                 Lastname: lastname,
