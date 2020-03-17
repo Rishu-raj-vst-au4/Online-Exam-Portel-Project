@@ -5,9 +5,9 @@ ProjectController.add = function(req, res) {
     let Lastname = req.body.Lastname;
     let Email = req.body.Email;
     let Gender = req.body.Gender;
-    let Mobile = req.body.Mobile;
+    let Mobile = req.body.Mobilenumber;
     let Password = req.body.Password;
-    let Confirmpassword = req.body.Confirmpassword;
+    let Confirmpassword = req.body.ConfirmPassword;
     data = {
         FirstName: Firstname,
         LastName: Lastname,
